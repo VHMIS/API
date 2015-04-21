@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\Validator\Validator | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_Validator_Validator" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../Vhmis/Validator.html">Validator</a></li>
+    
+                <li>Validator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Validator</h1>
+    </div>
+
+    <p>    class
+    <strong>Validator</strong></p>
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>NOTVALUE</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NULLVALUE</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EMPTYVALUE</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addField">addField</a>(string $name, mixed $value, boolean $allowEmpty = false, boolean $allowNull = false)
+                                            <p>Thêm một trường vào để kiểm tra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromPost">fromPost</a>(array $name, array $value)
+                                            <p>Danh sách các trường POST cần kiểm tra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromGet">fromGet</a>(array $name, array $value)
+                                            <p>Danh sách các trường GET cần kiểm tra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAllowEmpty">addAllowEmpty</a>(string $name)
+                                            <p>Cho phép một trường nhận giá trị rỗng</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPostAllowEmpty">addPostAllowEmpty</a>(array $name)
+                                            <p>Cho phép các trường POST nhận giá trị rỗng</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGetAllowEmpty">addGetAllowEmpty</a>(array $name)
+                                            <p>Cho phép các trường GET nhận giá trị rỗng</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAllowNull">addAllowNull</a>(string $name)
+                                            <p>Cho phép một trường nhận giá trị null</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPostAllowNull">addPostAllowNull</a>(array $name)
+                                            <p>Cho phép các trường POST nhận giá trị null</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGetAllowNull">addGetAllowNull</a>(array $name)
+                                            <p>Cho phép các trường GET nhận giá trị null</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addValidator">addValidator</a>($name, $validator, $params = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPostValidator">addPostValidator</a>($name, $validator, $params = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGetValidator">addGetValidator</a>($name, $validator, $params = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValid">isValid</a>()
+                                            <p>Kiểm tra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRawValue">getRawValue</a>(string $name)
+                                            <p>Lấy giá trị ban đầu của 1 trường</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStandardValue">getStandardValue</a>(string $name)
+                                            <p>Lấy giá trị chuẩn của 1 trường</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPostStandardValue">getPostStandardValue</a>(string $name)
+                                            <p>Lấy giá trị chuẩn của 1 trường thuộc post</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGetStandardValue">getGetStandardValue</a>(string $name)
+                                            <p>Lấy giá trị chuẩn của 1 trường thuộc get</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMessage">setMessage</a>(<abbr title="Vhmis\Validator\type">type</abbr> $field, <abbr title="Vhmis\Validator\type">type</abbr> $message, <abbr title="Vhmis\Validator\type">type</abbr> $code)
+                                            <p>Thiết lập thông tin lỗi</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMessage">getMessage</a>()
+                                            <p>Lấy thông tin lỗi</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+                                            <p>Reset lại thông tin validator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addField">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addField</strong>(string $name, mixed $value, boolean $allowEmpty = false, boolean $allowNull = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Thêm một trường vào để kiểm tra</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Tên</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Giá trị</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$allowEmpty</td>
+                <td>Cho phép rỗng</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$allowNull</td>
+                <td>Cho phép null</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromPost">
+        <div class="location">at line 135</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>fromPost</strong>(array $name, array $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Danh sách các trường POST cần kiểm tra</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td>Mảng danh sách tên</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$value</td>
+                <td>Mảng danh sách giá trị</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fromGet">
+        <div class="location">at line 157</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>fromGet</strong>(array $name, array $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Danh sách các trường GET cần kiểm tra</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td>Mảng danh sách tên</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$value</td>
+                <td>Mảng danh sách giá trị</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAllowEmpty">
+        <div class="location">at line 178</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addAllowEmpty</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cho phép một trường nhận giá trị rỗng</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPostAllowEmpty">
+        <div class="location">at line 193</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addPostAllowEmpty</strong>(array $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cho phép các trường POST nhận giá trị rỗng</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGetAllowEmpty">
+        <div class="location">at line 208</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addGetAllowEmpty</strong>(array $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cho phép các trường GET nhận giá trị rỗng</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAllowNull">
+        <div class="location">at line 223</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addAllowNull</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cho phép một trường nhận giá trị null</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPostAllowNull">
+        <div class="location">at line 238</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addPostAllowNull</strong>(array $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cho phép các trường POST nhận giá trị null</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGetAllowNull">
+        <div class="location">at line 253</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>addGetAllowNull</strong>(array $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cho phép các trường GET nhận giá trị null</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addValidator">
+        <div class="location">at line 262</div>
+        <code>                    
+    <strong>addValidator</strong>($name, $validator, $params = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$validator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPostValidator">
+        <div class="location">at line 269</div>
+        <code>                    
+    <strong>addPostValidator</strong>($name, $validator, $params = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$validator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGetValidator">
+        <div class="location">at line 282</div>
+        <code>                    
+    <strong>addGetValidator</strong>($name, $validator, $params = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$validator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">at line 300</div>
+        <code>                    boolean
+    <strong>isValid</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Kiểm tra</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRawValue">
+        <div class="location">at line 379</div>
+        <code>                    mixed
+    <strong>getRawValue</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy giá trị ban đầu của 1 trường</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStandardValue">
+        <div class="location">at line 390</div>
+        <code>                    mixed
+    <strong>getStandardValue</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy giá trị chuẩn của 1 trường</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPostStandardValue">
+        <div class="location">at line 401</div>
+        <code>                    mixed
+    <strong>getPostStandardValue</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy giá trị chuẩn của 1 trường thuộc post</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGetStandardValue">
+        <div class="location">at line 412</div>
+        <code>                    mixed
+    <strong>getGetStandardValue</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy giá trị chuẩn của 1 trường thuộc get</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMessage">
+        <div class="location">at line 424</div>
+        <code>                    
+    <strong>setMessage</strong>(<abbr title="Vhmis\Validator\type">type</abbr> $field, <abbr title="Vhmis\Validator\type">type</abbr> $message, <abbr title="Vhmis\Validator\type">type</abbr> $code)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Thiết lập thông tin lỗi</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\Validator\type">type</abbr></td>
+                <td>$field</td>
+                <td>Trường bị lỗi</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Vhmis\Validator\type">type</abbr></td>
+                <td>$message</td>
+                <td>Thông báo lỗi</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Vhmis\Validator\type">type</abbr></td>
+                <td>$code</td>
+                <td>Mã lỗi</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessage">
+        <div class="location">at line 436</div>
+        <code>                    array
+    <strong>getMessage</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy thông tin lỗi</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line 462</div>
+        <code>                    <a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a>
+    <strong>reset</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Reset lại thông tin validator</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Validator/Validator.html"><abbr title="Vhmis\Validator\Validator">Validator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

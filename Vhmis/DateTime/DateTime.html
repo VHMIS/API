@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\DateTime\DateTime | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_DateTime_DateTime" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../Vhmis/DateTime.html">DateTime</a></li>
+    
+                <li>DateTime</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>DateTime</h1>
+    </div>
+
+    <p>    class
+    <strong>DateTime</strong>        extends <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></p>
+
+            <div class="description">
+            <p>Datetime class, extends from PHP Datetime class</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createFromFormat">createFromFormat</a>(string $format, string $time, <a href="http://php.net/DateTimeZone"><abbr title="DateTimeZone">DateTimeZone</abbr></a> $timezone = null)
+                                            <p>Các class static trả về DateTime cần viết lại để trả về đúng class mới
+sử dụng new static() để tránh luôn chuyện này xảy ra nếu tiếp tục extends
+từ class mới</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStartOfWeek">setStartOfWeek</a>(int $day)
+                                            <p>Set start day of week
+0 - 6 (sunday, monday, .</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStartOfWeek">getStartOfWeek</a>()
+                                            <p>Get start day of week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffDay">diffDay</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p>Find different in day between 2 dates (not effect by time)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffWeek">diffWeek</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p>Find different in week between 2 dates (based on week)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffMonth">diffMonth</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p>Find different in month between 2 dates (based on month)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffYear">diffYear</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p>Find different in year between 2 dates (based on year)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSecond">addSecond</a>(int $sec)
+                                            <p>Add / sub second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMinute">addMinute</a>(int $min)
+                                            <p>Add / sub minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addHour">addHour</a>(int $hour)
+                                            <p>Thêm / giảm giờ, thay cho modify và add</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDay">addDay</a>(int $day)
+                                            <p>Add / sub day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addWeek">addWeek</a>(int $week)
+                                            <p>Add / sub week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMonth">addMonth</a>(int $month)
+                                            <p>Add / sub month and don't care about total days of month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addYear">addYear</a>(int $year)
+                                            <p>Add / sub year and don't care about total days of month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDay">setDay</a>(int $day)
+                                            <p>Set day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMonth">setMonth</a>(int $month)
+                                            <p>Set month (1-12)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setYear">setYear</a>(int $year)
+                                            <p>Set year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNow">setNow</a>()
+                                            <p>Set current time</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $name, array $arguments = null)
+                                            <p>Magic for set/get/format method</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findInterval">findInterval</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="DateTimeInterval">DateTimeInterval</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findBookingInterval">findBookingInterval</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p>Find booking (dorm, hotel) interval, only use month, day, hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findRelative">findRelative</a>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)
+                                            <p>Find relative</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModifiedDate">getModifiedDate</a>(string $modify)
+                                            <p>Same as modify() method but return new DateTime object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyThisWeek">modifyThisWeek</a>(string $modify)
+                                            <p>Modify date in this week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModifiedDateThisWeek">getModifiedDateThisWeek</a>(string $modify)
+                                            <p>Same as modifyThisWeek() method but return new DateTime object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMonth">getMonth</a>()
+                                            <p>Get month of date (2 characters)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getYear">getYear</a>()
+                                            <p>Get year of date (4 characters)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDay">getDay</a>()
+                                            <p>Get day of date (2 characters)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWeekday">getWeekday</a>()
+                                            <p>Get ISO-8601 numeric representation of the day of the week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatISODate">formatISODate</a>()
+                                            <p>Format date as ISO date format (Y-m-d)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatISODateTime">formatISODateTime</a>()
+                                            <p>Format date as ISO datetime format (Y-m-d H:i:s)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatISOYearMonth">formatISOYearMonth</a>()
+                                            <p>Format date as ISO year and month format (Y-m),</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatSQLDate">formatSQLDate</a>()
+                                            <p>Format date as SQL date format</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatSQLDateTime">formatSQLDateTime</a>()
+                                            <p>Format date as SQL datetime format</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFirstDayOfWeek">getFirstDayOfWeek</a>()
+                                            <p>Get new DateTime object with date is first day of week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastDayOfWeek">getLastDayOfWeek</a>()
+                                            <p>Get new DateTime object with date is last day of week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_createFromFormat">
+        <div class="location">at line 95</div>
+        <code>        static            <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>createFromFormat</strong>(string $format, string $time, <a href="http://php.net/DateTimeZone"><abbr title="DateTimeZone">DateTimeZone</abbr></a> $timezone = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Các class static trả về DateTime cần viết lại để trả về đúng class mới
+sử dụng new static() để tránh luôn chuyện này xảy ra nếu tiếp tục extends
+từ class mới</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$time</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/DateTimeZone"><abbr title="DateTimeZone">DateTimeZone</abbr></a></td>
+                <td>$timezone</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStartOfWeek">
+        <div class="location">at line 122</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setStartOfWeek</strong>(int $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set start day of week
+0 - 6 (sunday, monday, .</p>                    <p>.., saturday)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStartOfWeek">
+        <div class="location">at line 140</div>
+        <code>                    string
+    <strong>getStartOfWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get start day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffDay">
+        <div class="location">at line 152</div>
+        <code>                    int
+    <strong>diffDay</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Find different in day between 2 dates (not effect by time)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffWeek">
+        <div class="location">at line 173</div>
+        <code>                    int
+    <strong>diffWeek</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Find different in week between 2 dates (based on week)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffMonth">
+        <div class="location">at line 197</div>
+        <code>                    int
+    <strong>diffMonth</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Find different in month between 2 dates (based on month)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffYear">
+        <div class="location">at line 215</div>
+        <code>                    int
+    <strong>diffYear</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Find different in year between 2 dates (based on year)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSecond">
+        <div class="location">at line 230</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addSecond</strong>(int $sec)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add / sub second</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$sec</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMinute">
+        <div class="location">at line 246</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addMinute</strong>(int $min)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add / sub minute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$min</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHour">
+        <div class="location">at line 258</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addHour</strong>(int $hour)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Thêm / giảm giờ, thay cho modify và add</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$hour</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDay">
+        <div class="location">at line 270</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addDay</strong>(int $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add / sub day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWeek">
+        <div class="location">at line 282</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addWeek</strong>(int $week)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add / sub week</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$week</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMonth">
+        <div class="location">at line 294</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addMonth</strong>(int $month)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add / sub month and don't care about total days of month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addYear">
+        <div class="location">at line 317</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addYear</strong>(int $year)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add / sub year and don't care about total days of month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDay">
+        <div class="location">at line 337</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setDay</strong>(int $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMonth">
+        <div class="location">at line 355</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setMonth</strong>(int $month)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set month (1-12)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setYear">
+        <div class="location">at line 375</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setYear</strong>(int $year)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNow">
+        <div class="location">at line 389</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setNow</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set current time</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at line 404</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, array $arguments = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Magic for set/get/format method</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findInterval">
+        <div class="location">at line 422</div>
+        <code>                    array
+    <strong>findInterval</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findBookingInterval">
+        <div class="location">at line 446</div>
+        <code>                    <abbr title="DateTimeInterval">DateTimeInterval</abbr>
+    <strong>findBookingInterval</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Find booking (dorm, hotel) interval, only use month, day, hour</p>                    <p>Move diff year to diff month</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="DateTimeInterval">DateTimeInterval</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findRelative">
+        <div class="location">at line 483</div>
+        <code>                    array
+    <strong>findRelative</strong>(<a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a> $date)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Find relative</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModifiedDate">
+        <div class="location">at line 510</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>getModifiedDate</strong>(string $modify)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Same as modify() method but return new DateTime object</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modify</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyThisWeek">
+        <div class="location">at line 528</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>modifyThisWeek</strong>(string $modify)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Modify date in this week</p>                    <p>Modify string can be 'first day', 'last day' or name of weekday</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modify</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModifiedDateThisWeek">
+        <div class="location">at line 555</div>
+        <code>                    <a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a>
+    <strong>getModifiedDateThisWeek</strong>(string $modify)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Same as modifyThisWeek() method but return new DateTime object</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$modify</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/DateTime/DateTime.html"><abbr title="Vhmis\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonth">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>getMonth</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get month of date (2 characters)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYear">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>getYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get year of date (4 characters)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDay">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>getDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get day of date (2 characters)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWeekday">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>getWeekday</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get ISO-8601 numeric representation of the day of the week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatISODate">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>formatISODate</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format date as ISO date format (Y-m-d)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatISODateTime">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>formatISODateTime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format date as ISO datetime format (Y-m-d H:i:s)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatISOYearMonth">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>formatISOYearMonth</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format date as ISO year and month format (Y-m),</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatSQLDate">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>formatSQLDate</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format date as SQL date format</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatSQLDateTime">
+        <div class="location">at line 28</div>
+        <code>                    string
+    <strong>formatSQLDateTime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format date as SQL datetime format</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFirstDayOfWeek">
+        <div class="location">at line 28</div>
+        <code>                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getFirstDayOfWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get new DateTime object with date is first day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastDayOfWeek">
+        <div class="location">at line 28</div>
+        <code>                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getLastDayOfWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get new DateTime object with date is last day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

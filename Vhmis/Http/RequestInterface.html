@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\Http\RequestInterface | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_Http_RequestInterface" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                                                            <li><a href="../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../Vhmis/Http.html">Http</a></li>
+    
+                <li>RequestInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>RequestInterface</h1>
+    </div>
+
+    <p>    interface
+    <strong>RequestInterface</strong>        implements
+        <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></p>
+
+            <div class="description">
+            <p>Representation of an outgoing, client-side request.</p>            <p>Per the HTTP specification, this interface includes properties for
+each of the following:</p>
+
+<ul>
+<li>Protocol version</li>
+<li>HTTP method</li>
+<li>URI</li>
+<li>Headers</li>
+<li>Message body</li>
+</ul>
+
+<p>Requests are considered immutable; all methods that might change state MUST
+be implemented such that they retain the internal state of the current
+message and return a new instance that contains the changed state.</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocolVersion">getProtocolVersion</a>()
+                                            <p>Retrieves the HTTP protocol version as a string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_getProtocolVersion"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withProtocolVersion">withProtocolVersion</a>(string $version)
+                                            <p>Create a new instance with the specified HTTP protocol version.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_withProtocolVersion"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaders">getHeaders</a>()
+                                            <p>Extends MessageInterface::getHeaders() to provide request-specific
+behavior.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasHeader">hasHeader</a>(string $name)
+                                            <p>Checks if a header exists by the given case-insensitive name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_hasHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeader">getHeader</a>(string $name)
+                                            <p>Extends MessageInterface::getHeader() to provide request-specific
+behavior.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaderLines">getHeaderLines</a>(string $name)
+                                            <p>Extends MessageInterface::getHeaderLines() to provide request-specific
+behavior.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withHeader">withHeader</a>(string $name, string|string[] $value)
+                                            <p>Create a new instance with the provided header, replacing any existing
+values of any headers with the same case-insensitive name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_withHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withAddedHeader">withAddedHeader</a>(string $name, string|string[] $value)
+                                            <p>Creates a new instance, with the specified header appended with the
+given value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_withAddedHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutHeader">withoutHeader</a>(string $name)
+                                            <p>Creates a new instance, without the specified header.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_withoutHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/StreamableInterface.html"><abbr title="Vhmis\Http\StreamableInterface">StreamableInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBody">getBody</a>()
+                                            <p>Gets the body of the message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_getBody"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withBody">withBody</a>(<a href="../../Vhmis/Http/StreamableInterface.html"><abbr title="Vhmis\Http\StreamableInterface">StreamableInterface</abbr></a> $body)
+                                            <p>Create a new instance, with the specified message body.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Vhmis/Http/MessageInterface.html#method_withBody"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestTarget">getRequestTarget</a>()
+                                            <p>Retrieves the message's request target.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withRequestTarget">withRequestTarget</a>(mixed $requestTarget)
+                                            <p>Create a new instance with a specific request-target.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethod">getMethod</a>()
+                                            <p>Retrieves the HTTP method of the request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withMethod">withMethod</a>(string $method)
+                                            <p>Create a new instance with the provided HTTP method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/UriInterface.html"><abbr title="Vhmis\Http\UriInterface">UriInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUri">getUri</a>()
+                                            <p>Retrieves the URI instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withUri">withUri</a>(<a href="../../Vhmis/Http/UriInterface.html"><abbr title="Vhmis\Http\UriInterface">UriInterface</abbr></a> $uri)
+                                            <p>Create a new instance with the provided URI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getProtocolVersion">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_getProtocolVersion"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 34</div>
+        <code>                    string
+    <strong>getProtocolVersion</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieves the HTTP protocol version as a string.</p>                    <p>The string MUST contain only the HTTP version number (e.g., "1.1", "1.0").</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>HTTP protocol version.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withProtocolVersion">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_withProtocolVersion"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 49</div>
+        <code>                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+    <strong>withProtocolVersion</strong>(string $version)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new instance with the specified HTTP protocol version.</p>                    <p>The version string MUST contain only the HTTP version number (e.g.,
+"1.1", "1.0").</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+new protocol version.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td>HTTP protocol version</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">at line 47</div>
+        <code>                    array
+    <strong>getHeaders</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Extends MessageInterface::getHeaders() to provide request-specific
+behavior.</p>                    <p>Retrieves all message headers.</p>
+
+<p>This method acts exactly like MessageInterface::getHeaders(), with one
+behavioral change: if the Host header has not been previously set, the
+method MUST attempt to pull the host segment of the composed URI, if
+present.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Returns an associative array of the message's headers. Each
+    key MUST be a header name, and each value MUST be an array of strings.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>MessageInterface::getHeaders()</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>UriInterface::getHost()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHeader">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_hasHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 85</div>
+        <code>                    bool
+    <strong>hasHeader</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if a header exists by the given case-insensitive name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Case-insensitive header field name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Returns true if any header names match the given header
+    name using a case-insensitive string comparison. Returns false if
+    no matching header name is found in the message.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeader">
+        <div class="location">at line 63</div>
+        <code>                    string
+    <strong>getHeader</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Extends MessageInterface::getHeader() to provide request-specific
+behavior.</p>                    <p>This method acts exactly like MessageInterface::getHeader(), with
+one behavioral change: if the Host header is requested, but has
+not been previously set, the method MUST attempt to pull the host
+segment of the composed URI, if present.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Case-insensitive header field name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>MessageInterface::getHeader()</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>UriInterface::getHost()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaderLines">
+        <div class="location">at line 81</div>
+        <code>                    string[]
+    <strong>getHeaderLines</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Extends MessageInterface::getHeaderLines() to provide request-specific
+behavior.</p>                    <p>Retrieves a header by the given case-insensitive name as an array of strings.</p>
+
+<p>This method acts exactly like MessageInterface::getHeaderLines(), with
+one behavioral change: if the Host header is requested, but has
+not been previously set, the method MUST attempt to pull the host
+segment of the composed URI, if present.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Case-insensitive header field name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>MessageInterface::getHeaderLines()</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>UriInterface::getHost()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHeader">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_withHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 133</div>
+        <code>                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+    <strong>withHeader</strong>(string $name, string|string[] $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new instance with the provided header, replacing any existing
+values of any headers with the same case-insensitive name.</p>                    <p>While header names are case-insensitive, the casing of the header will
+be preserved by this function, and returned from getHeaders().</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+new and/or updated header and value.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Case-insensitive header field name.</td>
+            </tr>
+                    <tr>
+                <td>string|string[]</td>
+                <td>$value</td>
+                <td>Header value(s).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>for invalid header names or values.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withAddedHeader">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_withAddedHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 152</div>
+        <code>                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+    <strong>withAddedHeader</strong>(string $name, string|string[] $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Creates a new instance, with the specified header appended with the
+given value.</p>                    <p>Existing values for the specified header will be maintained. The new
+value(s) will be appended to the existing list. If the header did not
+exist previously, it will be added.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+new header and/or value.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Case-insensitive header field name to add.</td>
+            </tr>
+                    <tr>
+                <td>string|string[]</td>
+                <td>$value</td>
+                <td>Header value(s).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>for invalid header names or values.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutHeader">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_withoutHeader"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 166</div>
+        <code>                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+    <strong>withoutHeader</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Creates a new instance, without the specified header.</p>                    <p>Header resolution MUST be done without case-sensitivity.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that removes
+the named header.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Case-insensitive header field name to remove.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBody">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_getBody"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 173</div>
+        <code>                    <a href="../../Vhmis/Http/StreamableInterface.html"><abbr title="Vhmis\Http\StreamableInterface">StreamableInterface</abbr></a>
+    <strong>getBody</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the body of the message.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/StreamableInterface.html"><abbr title="Vhmis\Http\StreamableInterface">StreamableInterface</abbr></a></td>
+            <td>Returns the body as a stream.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withBody">
+        <div class="location">in <a href="../../Vhmis/Http/MessageInterface.html#method_withBody"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a> at line 188</div>
+        <code>                    <a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a>
+    <strong>withBody</strong>(<a href="../../Vhmis/Http/StreamableInterface.html"><abbr title="Vhmis\Http\StreamableInterface">StreamableInterface</abbr></a> $body)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new instance, with the specified message body.</p>                    <p>The body MUST be a StreamableInterface object.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+new body stream.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/Http/StreamableInterface.html"><abbr title="Vhmis\Http\StreamableInterface">StreamableInterface</abbr></a></td>
+                <td>$body</td>
+                <td>Body.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/MessageInterface.html"><abbr title="Vhmis\Http\MessageInterface">MessageInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>When the body is not valid.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestTarget">
+        <div class="location">at line 99</div>
+        <code>                    string
+    <strong>getRequestTarget</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieves the message's request target.</p>                    <p>Retrieves the message's request-target either as it will appear (for
+clients), as it appeared at request (for servers), or as it was
+specified for the instance (see withRequestTarget()).</p>
+
+<p>In most cases, this will be the origin-form of the composed URI,
+unless a value was provided to the concrete implementation (see
+withRequestTarget() below).</p>
+
+<p>If no URI is available, and no request-target has been specifically
+provided, this method MUST return the string "/".</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withRequestTarget">
+        <div class="location">at line 118</div>
+        <code>                    <a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a>
+    <strong>withRequestTarget</strong>(mixed $requestTarget)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new instance with a specific request-target.</p>                    <p>If the request needs a non-origin-form request-target — e.g., for
+specifying an absolute-form, authority-form, or asterisk-form —
+this method may be used to create an instance with the specified
+request-target, verbatim.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+changed request target.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$requestTarget</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethod">
+        <div class="location">at line 125</div>
+        <code>                    string
+    <strong>getMethod</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieves the HTTP method of the request.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Returns the request method.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withMethod">
+        <div class="location">at line 142</div>
+        <code>                    <a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a>
+    <strong>withMethod</strong>(string $method)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new instance with the provided HTTP method.</p>                    <p>While HTTP method names are typically all uppercase characters, HTTP
+method names are case-sensitive and thus implementations SHOULD NOT
+modify the given string.</p>
+
+<p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+changed request method.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Case-insensitive method.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>for invalid HTTP methods.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location">at line 153</div>
+        <code>                    <a href="../../Vhmis/Http/UriInterface.html"><abbr title="Vhmis\Http\UriInterface">UriInterface</abbr></a>
+    <strong>getUri</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieves the URI instance.</p>                    <p>This method MUST return a UriInterface instance.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/UriInterface.html"><abbr title="Vhmis\Http\UriInterface">UriInterface</abbr></a></td>
+            <td>Returns a UriInterface instance
+    representing the URI of the request, if any.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUri">
+        <div class="location">at line 166</div>
+        <code>                    <a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a>
+    <strong>withUri</strong>(<a href="../../Vhmis/Http/UriInterface.html"><abbr title="Vhmis\Http\UriInterface">UriInterface</abbr></a> $uri)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new instance with the provided URI.</p>                    <p>This method MUST be implemented in such a way as to retain the
+immutability of the message, and MUST return a new instance that has the
+new UriInterface instance.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/Http/UriInterface.html"><abbr title="Vhmis\Http\UriInterface">UriInterface</abbr></a></td>
+                <td>$uri</td>
+                <td>New request URI to use.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Http/RequestInterface.html"><abbr title="Vhmis\Http\RequestInterface">RequestInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

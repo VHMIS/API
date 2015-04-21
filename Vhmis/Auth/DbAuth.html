@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\Auth\DbAuth | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_Auth_DbAuth" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../Vhmis/Auth.html">Auth</a></li>
+    
+                <li>DbAuth</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>DbAuth</h1>
+    </div>
+
+    <p>    class
+    <strong>DbAuth</strong>        implements
+        <a href="../../Vhmis/Auth/AuthInterface.html"><abbr title="Vhmis\Auth\AuthInterface">AuthInterface</abbr></a>, <a href="../../Vhmis/Auth/CheckCredentialAwareInterface.html"><abbr title="Vhmis\Auth\CheckCredentialAwareInterface">CheckCredentialAwareInterface</abbr></a></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setModel">setModel</a>(<a href="../../Vhmis/Db/ModelInterface.html"><abbr title="Vhmis\Db\ModelInterface">ModelInterface</abbr></a> $model)
+                                            <p>Bảng dữ liệu chứa thông tin đăng nhập</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIdentityField">setIdentityField</a>($identityField)
+                                            <p>Thông tin trường nhận dạng (username or email .</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_auth">auth</a>(string $identity, string $credential)
+                                            <p>Chứng thực</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Db/EntityInterface.html"><abbr title="Vhmis\Db\EntityInterface">EntityInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIdentity">getIdentity</a>(string $identity)
+                                            <p>Lấy đối tượng được nhận dạng trong database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIdentityInfo">getIdentityInfo</a>()
+                                            <p>Lấy thông tin nhận dạng</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Auth/DbAuth.html"><abbr title="Vhmis\Auth\DbAuth">DbAuth</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCheckCredential">setCheckCredential</a>(<a href="../../Vhmis/Auth/CheckCredentialInterface.html"><abbr title="Vhmis\Auth\CheckCredentialInterface">CheckCredentialInterface</abbr></a> $checkCredential)
+                                            <p>Thiết lập Check Credential</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Auth/CheckCredentialInterface.html"><abbr title="Vhmis\Auth\CheckCredentialInterface">CheckCredentialInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCheckCredential">getCheckCredential</a>()
+                                            <p>Lấy Check Credential</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 32</div>
+        <code>                    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setModel">
+        <div class="location">at line 42</div>
+        <code>                    
+    <strong>setModel</strong>(<a href="../../Vhmis/Db/ModelInterface.html"><abbr title="Vhmis\Db\ModelInterface">ModelInterface</abbr></a> $model)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Bảng dữ liệu chứa thông tin đăng nhập</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/Db/ModelInterface.html"><abbr title="Vhmis\Db\ModelInterface">ModelInterface</abbr></a></td>
+                <td>$model</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIdentityField">
+        <div class="location">at line 53</div>
+        <code>                    
+    <strong>setIdentityField</strong>($identityField)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Thông tin trường nhận dạng (username or email .</p>                    <p>..)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$identityField</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_auth">
+        <div class="location">at line 66</div>
+        <code>                    int
+    <strong>auth</strong>(string $identity, string $credential)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Chứng thực</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$identity</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$credential</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIdentity">
+        <div class="location">at line 91</div>
+        <code>                    <a href="../../Vhmis/Db/EntityInterface.html"><abbr title="Vhmis\Db\EntityInterface">EntityInterface</abbr></a>
+    <strong>getIdentity</strong>(string $identity)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy đối tượng được nhận dạng trong database</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$identity</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Db/EntityInterface.html"><abbr title="Vhmis\Db\EntityInterface">EntityInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIdentityInfo">
+        <div class="location">at line 103</div>
+        <code>                    array
+    <strong>getIdentityInfo</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy thông tin nhận dạng</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCheckCredential">
+        <div class="location">at line 114</div>
+        <code>                    <a href="../../Vhmis/Auth/DbAuth.html"><abbr title="Vhmis\Auth\DbAuth">DbAuth</abbr></a>
+    <strong>setCheckCredential</strong>(<a href="../../Vhmis/Auth/CheckCredentialInterface.html"><abbr title="Vhmis\Auth\CheckCredentialInterface">CheckCredentialInterface</abbr></a> $checkCredential)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Thiết lập Check Credential</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/Auth/CheckCredentialInterface.html"><abbr title="Vhmis\Auth\CheckCredentialInterface">CheckCredentialInterface</abbr></a></td>
+                <td>$checkCredential</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Auth/DbAuth.html"><abbr title="Vhmis\Auth\DbAuth">DbAuth</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCheckCredential">
+        <div class="location">at line 126</div>
+        <code>                    <a href="../../Vhmis/Auth/CheckCredentialInterface.html"><abbr title="Vhmis\Auth\CheckCredentialInterface">CheckCredentialInterface</abbr></a>
+    <strong>getCheckCredential</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy Check Credential</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Auth/CheckCredentialInterface.html"><abbr title="Vhmis\Auth\CheckCredentialInterface">CheckCredentialInterface</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

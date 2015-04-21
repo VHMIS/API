@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\I18n\Output\DateTime | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_I18n_Output_DateTime" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../../Vhmis/I18n.html">I18n</a></li>
+                                        <li><a href="../../../Vhmis/I18n/Output.html">Output</a></li>
+    
+                <li>DateTime</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>DateTime</h1>
+    </div>
+
+    <p>    class
+    <strong>DateTime</strong></p>
+
+            <div class="description">
+            <p>Xuất ngày giờ theo các định dạng</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Khởi tạo</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/Output/DateTime.html"><abbr title="Vhmis\I18n\Output\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLocale">setLocale</a>(string $locale = null)
+                                            <p>Thiết lập Locale</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_date">date</a>(mixed $value, int $style)
+                                            <p>Xuất ngày theo các kiểu định dạng có sẵn trong PHP</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_time">time</a>(mixed $value, int $style)
+                                            <p>Xuất giờ theo các kiểu định dạng có sẵn trong PHP</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dateTime">dateTime</a>(<abbr title="Vhmis\I18n\Output\type">type</abbr> $value, <abbr title="Vhmis\I18n\Output\type">type</abbr> $dateStyle, <abbr title="Vhmis\I18n\Output\type">type</abbr> $timeStyle)
+                                            <p>Xuất ngày giờ theo các kiểu định dạng có sẵn trong PHP</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_customPattern">customPattern</a>(string $value, string $pattern)
+                                            <p>Xuất ngày giờ theo các pattern tự tạo hoặc dựa trên formatId từ dữ liệu CLDR
+Nếu muốn xuất cả ngày và giờ theo formatId thì truyền vào formatID của ngày và giờ, được phân cách bằng ký tự |</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calendarFieldName">calendarFieldName</a>($value, $field, $type, $format)
+                                            <p>Lấy tên của tháng hoặc ngày trong tuần</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dateFieldName">dateFieldName</a>($field, $format = &#039;displayName&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_relative">relative</a>(array $relative, string $date, int $dateStyle = 3, int $timeStyle = 3, string $pattern = &#039;&#039;)
+                                            <p>Hiển thị ngày giờ theo quan hệ với 1 ngày nào đó
+Nếu không $relative không nhận giá trị hợp lệ, sẽ xuất ra ngày giờ bình thường theo style hoặc pattern</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_yearMonth">yearMonth</a>(string $value)
+                                            <p>Xuất định dạng tháng và năm</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_yearWeek">yearWeek</a>(string $value)
+                                            <p>Xuất định dạng tuần của năm</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Vhmis\I18n\Output\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_range">range</a>(string $value1, string $value2, string $pattern)
+                                            <p>Xuất khoảng thời gian</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Vhmis\I18n\Output\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_interval">interval</a>($value1, $value2 = null)
+                                            <p>Xuất khoảng cách thời gian tính theo số năm, số ngày .</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unit">unit</a>($number, $field)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ago">ago</a>($date, $rootDate = &#039;&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 100</div>
+        <code>                    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Khởi tạo</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLocale">
+        <div class="location">at line 116</div>
+        <code>                    <a href="../../../Vhmis/I18n/Output/DateTime.html"><abbr title="Vhmis\I18n\Output\DateTime">DateTime</abbr></a>
+    <strong>setLocale</strong>(string $locale = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Thiết lập Locale</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$locale</td>
+                <td>Locale</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/Output/DateTime.html"><abbr title="Vhmis\I18n\Output\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_date">
+        <div class="location">at line 132</div>
+        <code>                    string
+    <strong>date</strong>(mixed $value, int $style)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất ngày theo các kiểu định dạng có sẵn trong PHP</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$style</td>
+                <td>Kiểu</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_time">
+        <div class="location">at line 152</div>
+        <code>                    string
+    <strong>time</strong>(mixed $value, int $style)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất giờ theo các kiểu định dạng có sẵn trong PHP</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$style</td>
+                <td>Kiểu</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dateTime">
+        <div class="location">at line 173</div>
+        <code>                    string
+    <strong>dateTime</strong>(<abbr title="Vhmis\I18n\Output\type">type</abbr> $value, <abbr title="Vhmis\I18n\Output\type">type</abbr> $dateStyle, <abbr title="Vhmis\I18n\Output\type">type</abbr> $timeStyle)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất ngày giờ theo các kiểu định dạng có sẵn trong PHP</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\Output\type">type</abbr></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Vhmis\I18n\Output\type">type</abbr></td>
+                <td>$dateStyle</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Vhmis\I18n\Output\type">type</abbr></td>
+                <td>$timeStyle</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_customPattern">
+        <div class="location">at line 211</div>
+        <code>                    string
+    <strong>customPattern</strong>(string $value, string $pattern)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất ngày giờ theo các pattern tự tạo hoặc dựa trên formatId từ dữ liệu CLDR
+Nếu muốn xuất cả ngày và giờ theo formatId thì truyền vào formatID của ngày và giờ, được phân cách bằng ký tự |</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calendarFieldName">
+        <div class="location">at line 267</div>
+        <code>                    string
+    <strong>calendarFieldName</strong>($value, $field, $type, $format)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Lấy tên của tháng hoặc ngày trong tuần</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dateFieldName">
+        <div class="location">at line 286</div>
+        <code>                    
+    <strong>dateFieldName</strong>($field, $format = &#039;displayName&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relative">
+        <div class="location">at line 305</div>
+        <code>                    string
+    <strong>relative</strong>(array $relative, string $date, int $dateStyle = 3, int $timeStyle = 3, string $pattern = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Hiển thị ngày giờ theo quan hệ với 1 ngày nào đó
+Nếu không $relative không nhận giá trị hợp lệ, sẽ xuất ra ngày giờ bình thường theo style hoặc pattern</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$relative</td>
+                <td>Kết quả được từ phương thức \Vhmis\DateTime\DateTime::relative()</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$date</td>
+                <td>Ngày cần xuất kết quả</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$dateStyle</td>
+                <td>Kiểu ngày được định dạng sẵn bởi PHP</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$timeStyle</td>
+                <td>Kiểu giờ được định dạng sẵn bởi PHP</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>Pattern hoặc FormatId</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yearMonth">
+        <div class="location">at line 340</div>
+        <code>                    string
+    <strong>yearMonth</strong>(string $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất định dạng tháng và năm</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yearWeek">
+        <div class="location">at line 351</div>
+        <code>                    string
+    <strong>yearWeek</strong>(string $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất định dạng tuần của năm</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_range">
+        <div class="location">at line 366</div>
+        <code>                    <abbr title="Vhmis\I18n\Output\type">type</abbr>
+    <strong>range</strong>(string $value1, string $value2, string $pattern)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất khoảng thời gian</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value1</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value2</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Vhmis\I18n\Output\type">type</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_interval">
+        <div class="location">at line 433</div>
+        <code>                    <abbr title="Vhmis\I18n\Output\type">type</abbr>
+    <strong>interval</strong>($value1, $value2 = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Xuất khoảng cách thời gian tính theo số năm, số ngày .</p>                    <p>...</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value1</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value2</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Vhmis\I18n\Output\type">type</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unit">
+        <div class="location">at line 484</div>
+        <code>                    
+    <strong>unit</strong>($number, $field)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$number</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ago">
+        <div class="location">at line 491</div>
+        <code>                    
+    <strong>ago</strong>($date, $rootDate = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rootDate</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

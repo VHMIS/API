@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\Controller\Controller | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_Controller_Controller" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../Vhmis/Controller.html">Controller</a></li>
+    
+                <li>Controller</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Controller</h1>
+    </div>
+
+    <p>    class
+    <strong>Controller</strong>        implements
+        <a href="../../Vhmis/Di/ServiceManagerAwareInterface.html"><abbr title="Vhmis\Di\ServiceManagerAwareInterface">ServiceManagerAwareInterface</abbr></a></p>
+
+            <div class="description">
+            <p>Controller</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_appInfo">
+                                                                                array
+                </td>
+                <td>$appInfo</td>
+                <td class="last">App info and request info</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_app">
+                                                                                string
+                </td>
+                <td>$app</td>
+                <td class="last">App name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_appUrl">
+                                                                                string
+                </td>
+                <td>$appUrl</td>
+                <td class="last">App url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_controller">
+                                                                                string
+                </td>
+                <td>$controller</td>
+                <td class="last">Controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_action">
+                                                                                string
+                </td>
+                <td>$action</td>
+                <td class="last">Action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_params">
+                                                                                array
+                </td>
+                <td>$params</td>
+                <td class="last">Params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_layout">
+                                                                                string
+                </td>
+                <td>$layout</td>
+                <td class="last">Layout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_template">
+                                                                                string
+                </td>
+                <td>$template</td>
+                <td class="last">Template</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_output">
+                                                                                string
+                </td>
+                <td>$output</td>
+                <td class="last">Output</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sm">
+                                                                                <a href="../../Vhmis/Di/ServiceManager.html"><abbr title="Vhmis\Di\ServiceManager">ServiceManager</abbr></a>
+                </td>
+                <td>$sm</td>
+                <td class="last">Container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_view">
+                                                                                <a href="../../Vhmis/View/View.html"><abbr title="Vhmis\View\View">View</abbr></a>
+                </td>
+                <td>$view</td>
+                <td class="last">View</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                                                                <a href="../../Vhmis/Network/Response.html"><abbr title="Vhmis\Network\Response">Response</abbr></a>
+                </td>
+                <td>$response</td>
+                <td class="last">
+</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                                                                <a href="../../Vhmis/Network/Request.html"><abbr title="Vhmis\Network\Request">Request</abbr></a>
+                </td>
+                <td>$request</td>
+                <td class="last">
+</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Vhmis\Controller\Network\Request">Request</abbr> $request = null, <abbr title="Vhmis\Controller\Network\Response">Response</abbr> $response = null)
+                                            <p>Construct</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setServiceManager">setServiceManager</a>(<a href="../../Vhmis/Di/ServiceManager.html"><abbr title="Vhmis\Di\ServiceManager">ServiceManager</abbr></a> $sm)
+                                            <p>Set service manager</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+                                            <p>Do request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_beforeInit">beforeInit</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_afterInit">afterInit</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Vhmis/Controller/Controller.html"><abbr title="Vhmis\Controller\Controller">Controller</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $key, mixed $data)
+                                            <p>Set data for view</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_end">end</a>(mixed $data, string $view = &#039;&#039;, string $layout = &#039;&#039;, string $template = &#039;&#039;)
+                                            <p>Gọi view</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_message">message</a>(array $data, string $layout = &#039;&#039;)
+                                            <p>Display message</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(array $data, string $layout = &#039;Error&#039;)
+                                            <p>Display error</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 115</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Vhmis\Controller\Network\Request">Request</abbr> $request = null, <abbr title="Vhmis\Controller\Network\Response">Response</abbr> $response = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Construct</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\Controller\Network\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Vhmis\Controller\Network\Response">Response</abbr></td>
+                <td>$response</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServiceManager">
+        <div class="location">at line 136</div>
+        <code>                    
+    <strong>setServiceManager</strong>(<a href="../../Vhmis/Di/ServiceManager.html"><abbr title="Vhmis\Di\ServiceManager">ServiceManager</abbr></a> $sm)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set service manager</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Vhmis/Di/ServiceManager.html"><abbr title="Vhmis\Di\ServiceManager">ServiceManager</abbr></a></td>
+                <td>$sm</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 144</div>
+        <code>                    
+    <strong>init</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Do request</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beforeInit">
+        <div class="location">at line 174</div>
+        <code>                    
+    <strong>beforeInit</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterInit">
+        <div class="location">at line 177</div>
+        <code>                    
+    <strong>afterInit</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at line 249</div>
+        <code>                    <a href="../../Vhmis/Controller/Controller.html"><abbr title="Vhmis\Controller\Controller">Controller</abbr></a>
+    <strong>set</strong>(string $key, mixed $data)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set data for view</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Vhmis/Controller/Controller.html"><abbr title="Vhmis\Controller\Controller">Controller</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_end">
+        <div class="location">at line 264</div>
+        <code>                    
+    <strong>end</strong>(mixed $data, string $view = &#039;&#039;, string $layout = &#039;&#039;, string $template = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gọi view</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$layout</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$template</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_message">
+        <div class="location">at line 291</div>
+        <code>                    
+    <strong>message</strong>(array $data, string $layout = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Display message</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$layout</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">at line 312</div>
+        <code>                    
+    <strong>error</strong>(array $data, string $layout = &#039;Error&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Display error</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$layout</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

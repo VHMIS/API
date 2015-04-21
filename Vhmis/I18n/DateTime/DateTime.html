@@ -1,0 +1,4683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Vhmis\I18n\DateTime\DateTime | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Vhmis_I18n_DateTime_DateTime" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Vhmis.html">Vhmis</a></li>
+                                        <li><a href="../../../Vhmis/I18n.html">I18n</a></li>
+                                        <li><a href="../../../Vhmis/I18n/DateTime.html">DateTime</a></li>
+    
+                <li>DateTime</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>DateTime</h1>
+    </div>
+
+    <p>    class
+    <strong>DateTime</strong>        extends <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></p>
+
+            <div class="description">
+            <p>I18n Datetime class</p>            <p>Support many calendars with locale info</p>        </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_calendars">
+                    static                                                            array
+                </td>
+                <td>$calendars</td>
+                <td class="last">List supported calendars</td>
+                <td><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#property_calendars"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>()
+                                            <p>Get calendar type</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getType"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/Utils/Std/AbstractDateTimeHelper.html"><abbr title="Vhmis\Utils\Std\AbstractDateTimeHelper">AbstractDateTimeHelper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHelper">getHelper</a>(string $name)
+                                            <p>Get helper</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/Utils/Std/AbstractDateTime.html#method_getHelper"><abbr title="Vhmis\Utils\Std\AbstractDateTime">AbstractDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(mixed $timezone = null, string $calendar = null, string $locale = null)
+                                            <p>Construct</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method___construct"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDate">setDate</a>(int $year, int $month, int $day)
+                                            <p>Set date</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setDate"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDateWithExtenedYear">setDateWithExtenedYear</a>(int $year, int $month, int $day)
+                                            <p>Set date with year is extended year</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setDateWithExtenedYear"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTime">setTime</a>(int $hour, int $minute, int $second, int $millisecond)
+                                            <p>Set time</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setTime"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimestamp">setTimestamp</a>(int $timestamp)
+                                            <p>Set epoch timestamp (UTC 00:00)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMilliTimestamp">setMilliTimestamp</a>(float $milliseconds)
+                                            <p>Set milliseconds since the epoch</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setMilliTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimeZone">setTimeZone</a>(mixed $timeZone)
+                                            <p>Set timezone</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setTimeZone"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimeZone">getTimeZone</a>()
+                                            <p>Get timezone name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getTimeZone"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMilliTimestamp">getMilliTimestamp</a>()
+                                            <p>Get milliseconds since the epoch</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getMilliTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimestamp">getTimestamp</a>()
+                                            <p>Get epoch timestamp (UTC 00:00)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_format">format</a>(string|array|int $format)
+                                            <p>Format</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_format"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getField">getField</a>(int $field)
+                                            <p>Get value of field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setField">setField</a>(int $field, int $value)
+                                            <p>Set value of field in min and max range of field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addField">addField</a>(int $field, int $amount)
+                                            <p>Add or sub value of field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_addField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffField">diffField</a>(<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> $date, int $field)
+                                            <p>Calculate difference between given time and this object's time</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_diffField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWeekFirstDay">getWeekFirstDay</a>()
+                                            <p>Get weekday that is first day of week
+1 : Sunday -> 7 : Saturday</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getWeekFirstDay"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSortedWeekday">getSortedWeekday</a>()
+                                            <p>Get sorted weekday based on first day of week</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getSortedWeekday"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setWeekFirstDay">setWeekFirstDay</a>(int $dayOfWeek)
+                                            <p>Set weekday that is first day of week
+1 : Sunday -> 7 : Saturday</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setWeekFirstDay"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+                                            <p>Object to string</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method___toString"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createNewWithSameI18nInfo">createNewWithSameI18nInfo</a>()
+                                            <p>New datetime with same I18n info</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_createNewWithSameI18nInfo"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+                                            <p>Clone object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method___clone"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modify">modify</a>(string $string)
+                                            <p>Set date or/and time by ISO style datetime
+Year is extended year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDayOfWeekType">getDayOfWeekType</a>()
+                                            <p>Get day of week type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDayOfWeekPosition">getDayOfWeekPosition</a>()
+                                            <p>Get day of week postion</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMaximumValueOfField">getMaximumValueOfField</a>(int $field)
+                                            <p>Get maximum values of field
+- Greatest : greatest maxium
+- Least : least maxium
+- Actual : maxium based on current date/time values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMinimumValueOfField">getMinimumValueOfField</a>(int $field)
+                                            <p>Get minimum values of field
+- Greatest : greatest minimum
+- Least : least minimum
+- Actual : minimum based on current date/time values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNow">setNow</a>()
+                                            <p>Set now</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $name, array $arguments)
+                                            <p>Magic __call method for some helpers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/Utils/Std/AbstractDateTimeHelper.html"><abbr title="Vhmis\Utils\Std\AbstractDateTimeHelper">AbstractDateTimeHelper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $name)
+                                            <p>magic __get method for get helper object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMillisecond">setMillisecond</a>(<abbr title="int ">int </abbr> $millisecond)
+                                            <p>Set millisecond</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSecond">setSecond</a>(<abbr title="int ">int </abbr> $second)
+                                            <p>Set second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMinute">setMinute</a>(<abbr title="int ">int </abbr> $minute)
+                                            <p>Set minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHour">setHour</a>(<abbr title="int ">int </abbr> $hour)
+                                            <p>Set hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDay">setDay</a>(<abbr title="int ">int </abbr> $day)
+                                            <p>Set day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIsLeapMont">setIsLeapMont</a>(<abbr title="int ">int </abbr> $day)
+                                            <p>Set isLeapMonth</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMonth">setMonth</a>(<abbr title="int ">int </abbr> $month)
+                                            <p>Set month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLeapMonth">setLeapMonth</a>(<abbr title="int ">int </abbr> $month)
+                                            <p>Set leap month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setYear">setYear</a>(<abbr title="int ">int </abbr> $year)
+                                            <p>Set year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEra">setEra</a>(<abbr title="int ">int </abbr> $era)
+                                            <p>Set era</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoPreviousDay">gotoPreviousDay</a>()
+                                            <p>Set previous day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoNextDay">gotoNextDay</a>()
+                                            <p>Set next day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoTomorrow">gotoTomorrow</a>()
+                                            <p>Set tomorrow</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoYesterday">gotoYesterday</a>()
+                                            <p>Set yesterday</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoFirstDayOfMonth">gotoFirstDayOfMonth</a>()
+                                            <p>Set first day of month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoLastDayOfMonth">gotoLastDayOfMonth</a>()
+                                            <p>Set last day of month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoDayOfWeek">gotoDayOfWeek</a>()
+                                            <p>Set day of week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoFirstDayOfWeek">gotoFirstDayOfWeek</a>()
+                                            <p>Set first day of week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoLastDayOfWeek">gotoLastDayOfWeek</a>()
+                                            <p>Set last day of week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gotoNthDayOfMonth">gotoNthDayOfMonth</a>(<abbr title="int ">int </abbr> $type, <abbr title="int ">int </abbr> $nth)
+                                            <p>Set Nth day of month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMillisecond">addMillisecond</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add millisecond</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSecond">addSecond</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMinute">addMinute</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addHour">addHour</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDay">addDay</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addWeek">addWeek</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMonth">addMonth</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addYear">addYear</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addEra">addEra</a>(<abbr title="int ">int </abbr> $amount)
+                                            <p>Add era</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDate">getDate</a>()
+                                            <p>Get date as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateWithExtendedYear">getDateWithExtendedYear</a>()
+                                            <p>Get date with extended year as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateWithRelatedYear">getDateWithRelatedYear</a>()
+                                            <p>Get date with related year as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTime">getTime</a>()
+                                            <p>Get time as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateTime">getDateTime</a>()
+                                            <p>Get datetime as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateTimeWithExtendedYear">getDateTimeWithExtendedYear</a>()
+                                            <p>Get datetime with extended year as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateTimeWithRelatedYear">getDateTimeWithRelatedYear</a>()
+                                            <p>Get datetime with related year as ISO style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMillsecond">getMillsecond</a>()
+                                            <p>Get second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSecond">getSecond</a>()
+                                            <p>Get second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMinute">getMinute</a>()
+                                            <p>Get minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHour">getHour</a>()
+                                            <p>Get hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDay">getDay</a>()
+                                            <p>Get day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWeek">getWeek</a>()
+                                            <p>Get week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMonth">getMonth</a>()
+                                            <p>Get month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getYear">getYear</a>()
+                                            <p>Get year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEra">getEra</a>()
+                                            <p>Get era</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatFull">formatFull</a>()
+                                            <p>Format datetime in full style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatLong">formatLong</a>()
+                                            <p>Format datetime in long style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatMedium">formatMedium</a>()
+                                            <p>Format datetime in medium style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatShort">formatShort</a>()
+                                            <p>Format datetime in short style</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diff">diff</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffEra">diffEra</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by era</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffYear">diffYear</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffMonth">diffMonth</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffDay">diffDay</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffHour">diffHour</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffMinute">diffMinute</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffSecond">diffSecond</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffMillisecond">diffMillisecond</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get different by millisecond</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsolute">diffAbsolute</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteEra">diffAbsoluteEra</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by era</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteYear">diffAbsoluteYear</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteMonth">diffAbsoluteMonth</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteWeek">diffAbsoluteWeek</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteDay">diffAbsoluteDay</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteHour">diffAbsoluteHour</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by hour</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteMinute">diffAbsoluteMinute</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by minute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteSecond">diffAbsoluteSecond</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by second</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    double
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_diffAbsoluteMillisecond">diffAbsoluteMillisecond</a>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)
+                                            <p>Get absolute different by millisecond</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repeatByDay">repeatByDay</a>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)
+                                            <p>Get repeated dates by day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repeatByWeek">repeatByWeek</a>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)
+                                            <p>Get repeated dates by week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repeatByMonth">repeatByMonth</a>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)
+                                            <p>Get repeated dates by month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repeatByYear">repeatByYear</a>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)
+                                            <p>Get repeated dates by year</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getType"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 195</div>
+        <code>                    string
+    <strong>getType</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get calendar type</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHelper">
+        <div class="location">in <a href="../../../Vhmis/Utils/Std/AbstractDateTime.html#method_getHelper"><abbr title="Vhmis\Utils\Std\AbstractDateTime">AbstractDateTime</abbr></a> at line 60</div>
+        <code>                    <a href="../../../Vhmis/Utils/Std/AbstractDateTimeHelper.html"><abbr title="Vhmis\Utils\Std\AbstractDateTimeHelper">AbstractDateTimeHelper</abbr></a>
+    <strong>getHelper</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get helper</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/Utils/Std/AbstractDateTimeHelper.html"><abbr title="Vhmis\Utils\Std\AbstractDateTimeHelper">AbstractDateTimeHelper</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method___construct"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 60</div>
+        <code>                    
+    <strong>__construct</strong>(mixed $timezone = null, string $calendar = null, string $locale = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Construct</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$timezone</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$calendar</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$locale</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Vhmis/Utils/Exception/InvalidArgumentException.html"><abbr title="Vhmis\Utils\Exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDate">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setDate"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 88</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setDate</strong>(int $year, int $month, int $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set date</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDateWithExtenedYear">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setDateWithExtenedYear"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 106</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setDateWithExtenedYear</strong>(int $year, int $month, int $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set date with year is extended year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$year</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTime">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setTime"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 128</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setTime</strong>(int $hour, int $minute, int $second, int $millisecond)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set time</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$hour</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$minute</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$second</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$millisecond</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimestamp">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 145</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setTimestamp</strong>(int $timestamp)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set epoch timestamp (UTC 00:00)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$timestamp</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMilliTimestamp">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setMilliTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 159</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setMilliTimestamp</strong>(float $milliseconds)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set milliseconds since the epoch</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>float</td>
+                <td>$milliseconds</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimeZone">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setTimeZone"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 173</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setTimeZone</strong>(mixed $timeZone)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set timezone</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$timeZone</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimeZone">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getTimeZone"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 185</div>
+        <code>                    string
+    <strong>getTimeZone</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get timezone name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMilliTimestamp">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getMilliTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 205</div>
+        <code>                    float
+    <strong>getMilliTimestamp</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get milliseconds since the epoch</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimestamp">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getTimestamp"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 215</div>
+        <code>                    int
+    <strong>getTimestamp</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get epoch timestamp (UTC 00:00)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_format">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_format"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 227</div>
+        <code>                    string
+    <strong>format</strong>(string|array|int $format)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array|int</td>
+                <td>$format</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getField">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 239</div>
+        <code>                    int
+    <strong>getField</strong>(int $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get value of field</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setField">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 258</div>
+        <code>                    boolean
+    <strong>setField</strong>(int $field, int $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set value of field in min and max range of field</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addField">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_addField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 284</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>addField</strong>(int $field, int $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add or sub value of field</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffField">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_diffField"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 300</div>
+        <code>                    int
+    <strong>diffField</strong>(<a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> $date, int $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Calculate difference between given time and this object's time</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+                <td>$date</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWeekFirstDay">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getWeekFirstDay"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 313</div>
+        <code>                    int
+    <strong>getWeekFirstDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get weekday that is first day of week
+1 : Sunday -> 7 : Saturday</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSortedWeekday">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_getSortedWeekday"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 323</div>
+        <code>                    int[]
+    <strong>getSortedWeekday</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get sorted weekday based on first day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWeekFirstDay">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_setWeekFirstDay"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 336</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>setWeekFirstDay</strong>(int $dayOfWeek)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set weekday that is first day of week
+1 : Sunday -> 7 : Saturday</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dayOfWeek</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method___toString"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 348</div>
+        <code>                    string
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Object to string</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createNewWithSameI18nInfo">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method_createNewWithSameI18nInfo"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 358</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>createNewWithSameI18nInfo</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>New datetime with same I18n info</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html#method___clone"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a> at line 377</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a>
+    <strong>__clone</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Clone object</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/SimpleDateTime.html"><abbr title="Vhmis\I18n\DateTime\SimpleDateTime">SimpleDateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modify">
+        <div class="location">at line 142</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>modify</strong>(string $string)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set date or/and time by ISO style datetime
+Year is extended year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDayOfWeekType">
+        <div class="location">at line 167</div>
+        <code>                    array
+    <strong>getDayOfWeekType</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get day of week type</p>                    <p>Includes all weekdays, working days, weekend, and weekday type</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDayOfWeekPosition">
+        <div class="location">at line 194</div>
+        <code>                    array
+    <strong>getDayOfWeekPosition</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get day of week postion</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMaximumValueOfField">
+        <div class="location">at line 216</div>
+        <code>                    array
+    <strong>getMaximumValueOfField</strong>(int $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get maximum values of field
+- Greatest : greatest maxium
+- Least : least maxium
+- Actual : maxium based on current date/time values</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinimumValueOfField">
+        <div class="location">at line 243</div>
+        <code>                    array
+    <strong>getMinimumValueOfField</strong>(int $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get minimum values of field
+- Greatest : greatest minimum
+- Least : least minimum
+- Actual : minimum based on current date/time values</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$field</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNow">
+        <div class="location">at line 265</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setNow</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set now</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at line 280</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, array $arguments)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Magic __call method for some helpers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at line 302</div>
+        <code>                    <a href="../../../Vhmis/Utils/Std/AbstractDateTimeHelper.html"><abbr title="Vhmis\Utils\Std\AbstractDateTimeHelper">AbstractDateTimeHelper</abbr></a>
+    <strong>__get</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>magic __get method for get helper object</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/Utils/Std/AbstractDateTimeHelper.html"><abbr title="Vhmis\Utils\Std\AbstractDateTimeHelper">AbstractDateTimeHelper</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMillisecond">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setMillisecond</strong>(<abbr title="int ">int </abbr> $millisecond)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set millisecond</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$millisecond</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSecond">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setSecond</strong>(<abbr title="int ">int </abbr> $second)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set second</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$second</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMinute">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setMinute</strong>(<abbr title="int ">int </abbr> $minute)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set minute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$minute</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHour">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setHour</strong>(<abbr title="int ">int </abbr> $hour)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set hour</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$hour</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDay">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setDay</strong>(<abbr title="int ">int </abbr> $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIsLeapMont">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setIsLeapMont</strong>(<abbr title="int ">int </abbr> $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set isLeapMonth</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMonth">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setMonth</strong>(<abbr title="int ">int </abbr> $month)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLeapMonth">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setLeapMonth</strong>(<abbr title="int ">int </abbr> $month)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set leap month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setYear">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setYear</strong>(<abbr title="int ">int </abbr> $year)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$year</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEra">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>setEra</strong>(<abbr title="int ">int </abbr> $era)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set era</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$era</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoPreviousDay">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoPreviousDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set previous day</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoNextDay">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoNextDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set next day</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoTomorrow">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoTomorrow</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set tomorrow</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoYesterday">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoYesterday</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set yesterday</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoFirstDayOfMonth">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoFirstDayOfMonth</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set first day of month</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoLastDayOfMonth">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoLastDayOfMonth</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set last day of month</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoDayOfWeek">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoDayOfWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoFirstDayOfWeek">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoFirstDayOfWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set first day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoLastDayOfWeek">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoLastDayOfWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set last day of week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gotoNthDayOfMonth">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>gotoNthDayOfMonth</strong>(<abbr title="int ">int </abbr> $type, <abbr title="int ">int </abbr> $nth)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set Nth day of month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$type</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$nth</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMillisecond">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addMillisecond</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add millisecond</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSecond">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addSecond</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add second</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMinute">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addMinute</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add minute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHour">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addHour</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add hour</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDay">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addDay</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWeek">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addWeek</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add week</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMonth">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addMonth</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addYear">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addYear</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addEra">
+        <div class="location">at line 109</div>
+        <code>                    <a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a>
+    <strong>addEra</strong>(<abbr title="int ">int </abbr> $amount)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add era</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$amount</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Vhmis/I18n/DateTime/DateTime.html"><abbr title="Vhmis\I18n\DateTime\DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDate">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getDate</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get date as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateWithExtendedYear">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getDateWithExtendedYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get date with extended year as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateWithRelatedYear">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getDateWithRelatedYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get date with related year as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTime">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getTime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get time as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateTime">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getDateTime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get datetime as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateTimeWithExtendedYear">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getDateTimeWithExtendedYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get datetime with extended year as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateTimeWithRelatedYear">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>getDateTimeWithRelatedYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get datetime with related year as ISO style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMillsecond">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getMillsecond</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get second</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSecond">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getSecond</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get second</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMinute">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getMinute</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get minute</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHour">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getHour</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get hour</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDay">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get day</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWeek">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getWeek</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get week</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonth">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getMonth</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get month</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYear">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get year</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEra">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>getEra</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get era</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatFull">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>formatFull</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format datetime in full style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatLong">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>formatLong</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format datetime in long style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatMedium">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>formatMedium</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format datetime in medium style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatShort">
+        <div class="location">at line 109</div>
+        <code>                    string
+    <strong>formatShort</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format datetime in short style</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diff">
+        <div class="location">at line 109</div>
+        <code>                    array
+    <strong>diff</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffEra">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffEra</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by era</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffYear">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffYear</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffMonth">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffMonth</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffDay">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffDay</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffHour">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffHour</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by hour</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffMinute">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffMinute</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by minute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffSecond">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffSecond</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by second</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffMillisecond">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffMillisecond</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get different by millisecond</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsolute">
+        <div class="location">at line 109</div>
+        <code>                    array
+    <strong>diffAbsolute</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteEra">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteEra</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by era</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteYear">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteYear</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteMonth">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteMonth</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteWeek">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteWeek</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by week</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteDay">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteDay</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteHour">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteHour</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by hour</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteMinute">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteMinute</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by minute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteSecond">
+        <div class="location">at line 109</div>
+        <code>                    int
+    <strong>diffAbsoluteSecond</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by second</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_diffAbsoluteMillisecond">
+        <div class="location">at line 109</div>
+        <code>                    double
+    <strong>diffAbsoluteMillisecond</strong>(<abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr> $datetime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get absolute different by millisecond</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Vhmis\I18n\DateTime\DateTime ">DateTime </abbr></td>
+                <td>$datetime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>double</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repeatByDay">
+        <div class="location">at line 109</div>
+        <code>                    array
+    <strong>repeatByDay</strong>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get repeated dates by day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$fromDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$toDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$times</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$freg</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repeatByWeek">
+        <div class="location">at line 109</div>
+        <code>                    array
+    <strong>repeatByWeek</strong>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get repeated dates by week</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$fromDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$toDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$times</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$freg</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repeatByMonth">
+        <div class="location">at line 109</div>
+        <code>                    array
+    <strong>repeatByMonth</strong>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get repeated dates by month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$fromDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$toDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$times</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$freg</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repeatByYear">
+        <div class="location">at line 109</div>
+        <code>                    array
+    <strong>repeatByYear</strong>(<abbr title="string ">string </abbr> $fromDate, <abbr title="string ">string </abbr> $toDate, <abbr title="int ">int </abbr> $times, <abbr title="int ">int </abbr> $freg)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get repeated dates by year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$fromDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="string ">string </abbr></td>
+                <td>$toDate</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$times</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="int ">int </abbr></td>
+                <td>$freg</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
